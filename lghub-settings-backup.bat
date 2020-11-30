@@ -1,4 +1,4 @@
-@echo on
+@echo off
 title G HUB User Settings Backup
 set SCRIPT_PATH=%~dp0
 set workdir=%HOMEDRIVE%%HOMEPATH%\AppData\Local\LGHUB\
@@ -24,4 +24,3 @@ mkdir "%SCRIPT_PATH%G HUB User Settings Backup(%day% %month% %year% %HH%.%MM%.%S
 
 xcopy %workdir%settings.json "%SCRIPT_PATH%G HUB User Settings Backup(%day% %month% %year% %HH%.%MM%.%SS%)"
 xcopy %workdir%settings.backup "%SCRIPT_PATH%G HUB User Settings Backup(%day% %month% %year% %HH%.%MM%.%SS%)"
-pause
